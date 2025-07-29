@@ -39,6 +39,10 @@
   font-family: "goudos";
   src: url("./assets/font/GOUDOS.TTF");
 }
+@font-face {
+  font-family: "Castellar";
+  src: url("./assets/font/Castellar.TTF");
+}
 
 .operinaRegular {
   font-family: "operinaRegular";
@@ -61,6 +65,7 @@
 .OldEnglishFive {
   font-family: "OldEnglishFive";
 }
+
 .kingthings {
   font-family: "kingthings";
 }
@@ -70,8 +75,10 @@
 .goudos {
   font-family: "goudos";
 }
-body {
-  background-color: #e7d3a1;
+.h {
+  font-family: "Castellar";
+  font-size: 50px;
+  font-weight: 500;
 }
 body {
   display: flex;
@@ -80,34 +87,33 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: aquamarine;
+  background-color: #e7d3a1;
 }
 .container {
   margin-top: 500px;
   height: auto;
   width: 80%;
   display: grid;
-  background-color: #000;
+  background-color: #e7d3a1;
   /*wdth         col1 crd2  crd3  crd5           */
   grid-template-columns: 200px 200px 550px 83px;
   /*     height hdln1  row2  row3                                   */
   grid-template-rows: 150px 360px 254px 300px;
   gap: 9px;
 }
-.item {
+/* .item {
   background-color: #f0f1ec;
-}
+} */
 
 .headline1 {
   grid-column: span 5;
-  font-size: 180px;
+  font-size: 160px;
   margin: 0;
   padding: 0;
   text-align: center;
-  /* letter-spacing: 22px; */
+  letter-spacing: 16px;
 }
 .card1 {
-  background-color: aliceblue;
   grid-row: span 1;
 }
 .card3 {
@@ -123,4 +129,27 @@ body {
   grid-column: span 2;
   grid-row: span 2;
 }
-/*  */
+.mainSubHead {
+  font-family: "headOhRegular";
+  font-size: 30px;
+  margin: 0px;
+  padding: 5px 0 0 5px;
+}
+.details {
+  font-size: 17px;
+  padding: 5px 0 0 5px;
+  margin: 0;
+}
+.mainImage {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  float: left;
+  padding: 0 5px 0 0;
+}
+.blackLine {
+  height: 2px;
+  width: 540px;
+  background: black;
+  margin: 5px;
+}
