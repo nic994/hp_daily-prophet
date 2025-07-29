@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "operinaRegular";
+  src: url("./assets/font/P22 Operina Fiore Fiore.ttf");
+}
+@font-face {
+  font-family: "mugglenewsRegular";
+  src: url("./assets/font/Mugglenews.ttf");
+}
+@font-face {
+  font-family: "prisonRegular";
+  src: url("./assets/font/Prison Pro AOE.ttf");
+}
+@font-face {
+  font-family: "blackCastleRegular";
+  src: url("./assets/font/BlackCastleMF.ttf");
+}
+@font-face {
+  font-family: "headOhRegular";
+  src: url("./assets/font/headohRegular.TTF");
+}
+@font-face {
+  font-family: "headThRegular";
+  src: url("./assets/font/headThRegular.TTF");
+}
+@font-face {
+  font-family: "kingthings";
+  src: url("./assets/font/kingthings.ttf");
+}
+@font-face {
+  font-family: "OldEnglishFive";
+  src: url("./assets/font/oldEnglishFive.ttf");
+}
+@font-face {
+  font-family: "astroGadget";
+  src: url("./assets/font/AstroGadget.ttf");
+}
+@font-face {
+  font-family: "goudos";
+  src: url("./assets/font/GOUDOS.TTF");
+}
+
+.operinaRegular {
+  font-family: "operinaRegular";
+}
+.mugglenewsRegular {
+  font-family: "mugglenewsRegular";
+}
+.prisonRegular {
+  font-family: "prisonRegular";
+}
+.blackCastleRegular {
+  font-family: "blackCastleRegular";
+}
+.headOhRegular {
+  font-family: "headOhRegular";
+}
+.headThRegular {
+  font-family: "headThRegular";
+}
+.OldEnglishFive {
+  font-family: "OldEnglishFive";
+}
+.kingthings {
+  font-family: "kingthings";
+}
+.astroGadget {
+  font-family: "astroGadget";
+}
+.goudos {
+  font-family: "goudos";
+}
+body {
+  background-color: #e7d3a1;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+}
+.container {
+  margin-top: 500px;
+  height: auto;
+  width: 80%;
+  display: grid;
+  background-color: #000;
+  /*wdth         col1 crd2  crd3  crd5           */
+  grid-template-columns: 200px 200px 550px 83px;
+  /*     height hdln1  row2  row3                                   */
+  grid-template-rows: 150px 360px 254px 300px;
+  gap: 9px;
+}
+.item {
+  background-color: #f0f1ec;
+}
+
+.headline1 {
+  grid-column: span 5;
+  font-size: 180px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* letter-spacing: 22px; */
+}
+.card1 {
+  background-color: aliceblue;
+  grid-row: span 1;
+}
+.card3 {
+  grid-column: span 3;
+}
+.card4 {
+  grid-column: span 2;
+}
+.card5 {
+  grid-column: span 1;
+}
+.card6 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/*  */
