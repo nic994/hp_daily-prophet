@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+  background-color: #e7d3a1;
+}
+.container {
+  height: auto;
+  width: 80%;
+  display: grid;
+  background-color: rgb(102, 235, 235);
+
+  grid-template-columns: 300px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "box-1  box-1 box-1 box-1 box-1"
+    "box-2 box-3 box-4  box-4 box-4"
+    "box-5 box-5  box-6 box-6 box-7"
+    "box-8 box-9 box-10 box-10 box-7";
+  gap: 9px;
+}
+
+.item {
+  border: 1px solid;
+  background-color: #f0f1ec;
+}
+@media (max-width: 1024px) {
+  .container {
+    background-color: aliceblue;
+
+    grid-template-areas:
+      "box-1  box-1 box-1 box-1 box-1"
+      "box-2 box-3 box-4  box-4 box-4"
+      "box-5 box-5  box-6 box-6 box-7"
+      "box-8 box-9 box-10 box-10 box-7";
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "box-1  box-1 box-1 box-1 "
+      "box-2 box-3 box-4 box-4"
+      "box-5 box-5 box-6 box-6"
+      "box-7 box-7 box-8 box-9"
+      "box-10 box-10 box-10 box-10";
+    background-color: beige;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    grid-template-areas:
+      "box-1  box-1 "
+      "box-2 box-3 "
+      "box-4 box-4"
+      "box-5 box-5"
+      " box-6 box-6"
+      "box-7 box-7 "
+      "box-8 box-9"
+      "box-10 box-10";
+    background-color: plum;
+  }
+}
